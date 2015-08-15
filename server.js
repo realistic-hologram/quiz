@@ -13,4 +13,4 @@ app.post('/', function(req, res) {
   res.send('You got ' + score + ' questions correct!');
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
